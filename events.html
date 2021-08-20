@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <h1>Learn Event</h1>
+    <!-- <h1 onclick="alert('Abul tui khas khabul')">Abul Khabar Khaow</h1>
+    <button onclick="console.log('Kitakit');">Click Me</button> -->
+
+    <button onclick="document.body.style.backgroundColor = 'red'">Click Me: Red</button>
+    <button onclick="changeColorYellow()">Yellow: Yellow</button>
+    <button id="blue-button">Different Way</button>
+    <button id="number-4">Click Me: Aqua</button>
+    <button id="number-5">Click Me: DarkSlateBlue</button>
+    <button id="number-6">Click Me: FireBrick</button>
+    <button id="number-7">Click Me: Gold</button>
+
+
+
+    <script>
+        document.getElementById('number-7').addEventListener('click', function () {
+            document.body.style.background = 'Gold';
+        })
+
+    </script>
+    <script src="js/event.js"></script>
+</body>
+
+</html>
